@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload de fotos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="container"></section>
+      <section id="form">
+        <form name="uploads">
+          <label for="uploadFiles" class="btn btn-primary"
+            >Selecione as fotos</label
+          >
+          <input
+            type="file"
+            multiple
+            name="fotos[]"
+            id="uploadFiles"
+            accept="image/png, image/jpeg"
+          />
+          <button type="button" id="btn_upload" class="btn btn-success">
+            Enviar
+          </button>
+        </form>
+      </section>
+      <section class="message" id="message_box"></section>
+    </main>
+  </body>
+  <script src="js/uploaderJS.js"></script>
+  <script src="js/init.js"></script>
+</html>

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$primary-color: #0b2e59;
+$success-color: #0d6759;
+$danger-color: red;
+$border-radius: 5px;
+
+/* Hide input */
+input[type="file"] {
+  display: none;
+}
+
+.btn {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.btn-primary {
+  background-color: $primary-color;
+}
+.btn-success {
+  background-color: $success-color;
+}
+main {
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  border: 3px dashed $primary-color;
+  .image-box {
+    img {
+      max-height: 250px;
+      height: 100%;
+      margin: 10px 0;
+    }
+  }
+}
+
+.message {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.message.fade {
+  opacity: 1;
+}
+
+.message-error {
+  background-color: $danger-color;
+  color: #fff;
+  padding: 6px 20px;
+  margin: 20px auto;
+  border-radius: $border-radius;
+}
+
+.message-success {
+  background-color: $success-color;
+  color: #fff;
+  padding: 6px 20px;
+  margin: 20px auto;
+  border-radius: $border-radius;
+}
